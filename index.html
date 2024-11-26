@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/incono.PNG" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Sección de Portada -->
+    <section id="seccion1">
+        <div class="con">
+            <h1>Galería Imágenes</h1>
+            <p>Mira nuestras Imágenes.</p><br>
+            <a href="#seccion2">IMAGENES</a>
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="seccion2">
+        <div class="galeria">
+            <!-- Añade aquí las 20 imágenes -->
+            <img src="img/1.PNG" alt="Imagen 1" onclick="openModal(this)">
+            <img src="img/2.PNG" alt="Imagen 2" onclick="openModal(this)">
+            <img src="img/3.PNG" alt="Imagen 3" onclick="openModal(this)">
+            <img src="img/4.PNG" alt="Imagen 4" onclick="openModal(this)">
+            <img src="img/5.PNG" alt="Imagen 5" onclick="openModal(this)">
+            <img src="img/6.PNG" alt="Imagen 6" onclick="openModal(this)">
+            <img src="img/7.PNG" alt="Imagen 7" onclick="openModal(this)">
+            <img src="img/8.PNG" alt="Imagen 8" onclick="openModal(this)">
+            <img src="img/9.PNG" alt="Imagen 9" onclick="openModal(this)">
+            <img src="img/10.PNG" alt="Imagen 10" onclick="openModal(this)">
+            <img src="img/11.PNG" alt="Imagen 11" onclick="openModal(this)">
+            <img src="img/12.PNG" alt="Imagen 12" onclick="openModal(this)">
+            <img src="img/13.PNG" alt="Imagen 13" onclick="openModal(this)">
+            <img src="img/14.PNG" alt="Imagen 14" onclick="openModal(this)">
+            <img src="img/15.PNG" alt="Imagen 15" onclick="openModal(this)">
+            <img src="img/16.PNG" alt="Imagen 16" onclick="openModal(this)">
+            <img src="img/17.PNG" alt="Imagen 17" onclick="openModal(this)">
+            <img src="img/18.PNG" alt="Imagen 18" onclick="openModal(this)">
+            <img src="img/19.PNG" alt="Imagen 19" onclick="openModal(this)">
+            <img src="img/20.PNG" alt="Imagen 20" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <!-- Modal para pantalla completa -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalText" class="modal-text"></div> <!-- Contenedor para el texto -->
+    </div>
+
+    <script src="pantalla.js"></script> <!-- Asegúrate de tener este archivo -->
+</body>
+</html>
